@@ -43,7 +43,7 @@ public class rotor : MonoBehaviour {
     /// <summary>
     /// Function called once per frame
     /// </summary>
-    void Update() { if (animationActivated) transform.Rotate(0, 0, power * 700 * Time.deltaTime * (counterclockwise ? -1 : 1)); }
+    void Update() { if (animationActivated) transform.Rotate(0, 0, power * 1700 * Time.deltaTime * (counterclockwise ? -1 : 1)); }
 
     /// <summary>
     /// Function at regular time interval
