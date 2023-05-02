@@ -1,9 +1,9 @@
 using Unity.XR.CoreUtils;
+using UnityEngine;
 using UnityEngine.Assertions;
+using UnityEngine.XR.Interaction.Toolkit;
 
-namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
-{
-    /// <summary>
+/// <summary>
     /// A version of action-based continuous movement that automatically controls the frame of reference that
     /// determines the forward direction of movement based on user preference for each hand.
     /// For example, can configure to use head relative movement for the left hand and controller relative movement for the right hand.
@@ -186,4 +186,3 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
             return base.ComputeDesiredMove(input);
         }
     }
-}
