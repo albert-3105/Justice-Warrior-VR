@@ -689,6 +689,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4511655667520052993, guid: 087e2a9d318d8b842b11b221d1f79534,
@@ -786,6 +787,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 4511655667520406305, guid: 087e2a9d318d8b842b11b221d1f79534,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4511655667520406309, guid: 087e2a9d318d8b842b11b221d1f79534,
         type: 3}
       propertyPath: m_Layer
@@ -797,6 +803,19 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 4511655667520052993, guid: 087e2a9d318d8b842b11b221d1f79534,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 344266665}
+    - targetCorrespondingSourceObject: {fileID: 4511655667520052993, guid: 087e2a9d318d8b842b11b221d1f79534,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 529379247}
+    - targetCorrespondingSourceObject: {fileID: 4511655667520052993, guid: 087e2a9d318d8b842b11b221d1f79534,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1920005405}
   m_SourcePrefab: {fileID: 100100000, guid: 087e2a9d318d8b842b11b221d1f79534, type: 3}
 --- !u!1 &183707679
 GameObject:
@@ -1047,11 +1066,16 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 792263973}
     m_Modifications:
     - target: {fileID: 100000, guid: 50e5bf297a1fe734abcceddf742133c1, type: 3}
       propertyPath: m_Name
       value: '9m  '
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 50e5bf297a1fe734abcceddf742133c1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 50e5bf297a1fe734abcceddf742133c1, type: 3}
       propertyPath: m_RootOrder
@@ -1110,17 +1134,23 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 50e5bf297a1fe734abcceddf742133c1, type: 3}
 --- !u!1001 &260964822
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 401504251}
     m_Modifications:
     - target: {fileID: 100000, guid: 50e5bf297a1fe734abcceddf742133c1, type: 3}
       propertyPath: m_Name
       value: '9m  '
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 50e5bf297a1fe734abcceddf742133c1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 50e5bf297a1fe734abcceddf742133c1, type: 3}
       propertyPath: m_RootOrder
@@ -1179,6 +1209,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 50e5bf297a1fe734abcceddf742133c1, type: 3}
 --- !u!1 &291525968
 GameObject:
@@ -1312,6 +1343,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 77ec979c4a1053f4fb90fee3d17b240c,
@@ -1390,6 +1422,7 @@ PrefabInstance:
       value: drone
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 77ec979c4a1053f4fb90fee3d17b240c, type: 3}
 --- !u!1 &303639602
 GameObject:
@@ -1938,6 +1971,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22ed70de5a8f42243bdab8d1a8708bc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weapon: {fileID: 385628800}
   bullet: {fileID: 1835528334}
   spawnPoint: {fileID: 529379247}
   fireSpeed: 20
@@ -2172,6 +2206,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 77ec979c4a1053f4fb90fee3d17b240c,
@@ -2255,6 +2290,7 @@ PrefabInstance:
       value: 0.08
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 77ec979c4a1053f4fb90fee3d17b240c, type: 3}
 --- !u!1 &410087039
 GameObject:
@@ -2489,6 +2525,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 8f9696fb6017be144a307b6586855ac0,
@@ -2571,7 +2608,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: pistol2
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8f9696fb6017be144a307b6586855ac0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8f9696fb6017be144a307b6586855ac0,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2117138793}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8f9696fb6017be144a307b6586855ac0,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 792263973}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8f9696fb6017be144a307b6586855ac0,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1901942213}
   m_SourcePrefab: {fileID: 100100000, guid: 8f9696fb6017be144a307b6586855ac0, type: 3}
 --- !u!1 &487028544
 GameObject:
@@ -2609,6 +2664,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 726e329e1719c8f42949342e6a5b42e3,
@@ -2692,6 +2748,19 @@ PrefabInstance:
       value: pistol3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 726e329e1719c8f42949342e6a5b42e3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2136439295}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 726e329e1719c8f42949342e6a5b42e3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 401504251}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 726e329e1719c8f42949342e6a5b42e3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 210165980}
   m_SourcePrefab: {fileID: 100100000, guid: 726e329e1719c8f42949342e6a5b42e3, type: 3}
 --- !u!1 &529379246
 GameObject:
@@ -2758,6 +2827,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 123392100}
     m_Modifications:
     - target: {fileID: 100000, guid: 50e5bf297a1fe734abcceddf742133c1, type: 3}
@@ -2821,6 +2891,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 50e5bf297a1fe734abcceddf742133c1, type: 3}
 --- !u!1 &608490905
 GameObject:
@@ -2882,6 +2953,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -3665,6 +3737,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22ed70de5a8f42243bdab8d1a8708bc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weapon: {fileID: 1156351921}
   bullet: {fileID: 5980023185747272824, guid: 9413a6276fe91104ab44f6ae0840fd87, type: 3}
   spawnPoint: {fileID: 0}
   fireSpeed: 20
@@ -4236,6 +4309,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 77ec979c4a1053f4fb90fee3d17b240c,
@@ -4314,6 +4388,7 @@ PrefabInstance:
       value: drone 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 77ec979c4a1053f4fb90fee3d17b240c, type: 3}
 --- !u!1 &1327314596
 GameObject:
@@ -4438,6 +4513,7 @@ SortingGroup:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
+  m_SortAtRoot: 0
 --- !u!114 &1331788392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4575,6 +4651,7 @@ MonoBehaviour:
   m_SnapEndpointIfAvailable: 1
 --- !u!120 &1331788393
 LineRenderer:
+  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -4668,10 +4745,13 @@ LineRenderer:
     numCapVertices: 4
     alignment: 0
     textureMode: 0
+    textureScale: {x: 1, y: 1}
     shadowBias: 0.5
     generateLightingData: 0
+  m_MaskInteraction: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+  m_ApplyActiveColorSpace: 0
 --- !u!114 &1331788394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4986,6 +5066,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c8573db8e30e916479a705831bd5040c,
@@ -5069,6 +5150,19 @@ PrefabInstance:
       value: sniper2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: c8573db8e30e916479a705831bd5040c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2065426547}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: c8573db8e30e916479a705831bd5040c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 853248826}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: c8573db8e30e916479a705831bd5040c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 487028545}
   m_SourcePrefab: {fileID: 100100000, guid: c8573db8e30e916479a705831bd5040c, type: 3}
 --- !u!1 &1366146787
 GameObject:
@@ -5347,6 +5441,7 @@ SortingGroup:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
+  m_SortAtRoot: 0
 --- !u!114 &1400156652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5484,6 +5579,7 @@ MonoBehaviour:
   m_SnapEndpointIfAvailable: 1
 --- !u!120 &1400156653
 LineRenderer:
+  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -5577,10 +5673,13 @@ LineRenderer:
     numCapVertices: 4
     alignment: 0
     textureMode: 0
+    textureScale: {x: 1, y: 1}
     shadowBias: 0.5
     generateLightingData: 0
+  m_MaskInteraction: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+  m_ApplyActiveColorSpace: 0
 --- !u!114 &1400156654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5971,6 +6070,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 1311143531}
     m_Modifications:
     - target: {fileID: 109434732395284509, guid: 65847589f926b734d9eaed6e25f0046b,
@@ -6044,6 +6144,7 @@ PrefabInstance:
       value: -0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 65847589f926b734d9eaed6e25f0046b, type: 3}
 --- !u!1 &1493249251
 GameObject:
@@ -6089,6 +6190,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 4df3ce82db8e66645afd54ab1d5b0262,
@@ -6171,7 +6273,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: pistol1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4df3ce82db8e66645afd54ab1d5b0262,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4df3ce82db8e66645afd54ab1d5b0262,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1494575656}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4df3ce82db8e66645afd54ab1d5b0262,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 123392100}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4df3ce82db8e66645afd54ab1d5b0262,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1943383511}
   m_SourcePrefab: {fileID: 100100000, guid: 4df3ce82db8e66645afd54ab1d5b0262, type: 3}
 --- !u!1 &1494575655
 GameObject:
@@ -6240,6 +6360,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 167297910}
     m_Modifications:
     - target: {fileID: 5686134208185136530, guid: 1fd3a7c43c8190f4d8c167ebde694364,
@@ -6303,6 +6424,7 @@ PrefabInstance:
       value: Right Hand Model
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fd3a7c43c8190f4d8c167ebde694364, type: 3}
 --- !u!1 &1514332795 stripped
 GameObject:
@@ -6465,6 +6587,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22ed70de5a8f42243bdab8d1a8708bc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weapon: {fileID: 1514332795}
   bullet: {fileID: 944147600}
   spawnPoint: {fileID: 792263973}
   fireSpeed: 20
@@ -6611,6 +6734,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 529379247}
     m_Modifications:
     - target: {fileID: 100000, guid: 50e5bf297a1fe734abcceddf742133c1, type: 3}
@@ -6674,6 +6798,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 50e5bf297a1fe734abcceddf742133c1, type: 3}
 --- !u!1 &1604458640
 GameObject:
@@ -6919,6 +7044,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22ed70de5a8f42243bdab8d1a8708bc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weapon: {fileID: 1654205303}
   bullet: {fileID: 5980023185747272824, guid: 9413a6276fe91104ab44f6ae0840fd87, type: 3}
   spawnPoint: {fileID: 0}
   fireSpeed: 20
@@ -7589,6 +7715,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22ed70de5a8f42243bdab8d1a8708bc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weapon: {fileID: 1774692870}
   bullet: {fileID: 347120314}
   spawnPoint: {fileID: 401504251}
   fireSpeed: 20
@@ -7626,6 +7753,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 100000, guid: 6d23c9d076c41c747aaf66ce9a678388, type: 3}
@@ -7693,6 +7821,7 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 64f1c060257833f45b8dda0dbfc11119, type: 2}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d23c9d076c41c747aaf66ce9a678388, type: 3}
 --- !u!1 &1817770931 stripped
 GameObject:
@@ -7860,6 +7989,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: f62f7dc06bd890d4aab43b8fd635fe02,
@@ -7943,6 +8073,19 @@ PrefabInstance:
       value: shotgun1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: f62f7dc06bd890d4aab43b8fd635fe02,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1499163933}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: f62f7dc06bd890d4aab43b8fd635fe02,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1030659309}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: f62f7dc06bd890d4aab43b8fd635fe02,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 106247366}
   m_SourcePrefab: {fileID: 100100000, guid: f62f7dc06bd890d4aab43b8fd635fe02, type: 3}
 --- !u!1 &1929531755
 GameObject:
@@ -7992,6 +8135,7 @@ SortingGroup:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
+  m_SortAtRoot: 0
 --- !u!114 &1929531758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8129,6 +8273,7 @@ MonoBehaviour:
   m_SnapEndpointIfAvailable: 1
 --- !u!120 &1929531759
 LineRenderer:
+  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -8222,10 +8367,13 @@ LineRenderer:
     numCapVertices: 4
     alignment: 0
     textureMode: 0
+    textureScale: {x: 1, y: 1}
     shadowBias: 0.5
     generateLightingData: 0
+  m_MaskInteraction: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+  m_ApplyActiveColorSpace: 0
 --- !u!114 &1929531760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8582,6 +8730,7 @@ SortingGroup:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
+  m_SortAtRoot: 0
 --- !u!114 &1929843120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8719,6 +8868,7 @@ MonoBehaviour:
   m_SnapEndpointIfAvailable: 1
 --- !u!120 &1929843121
 LineRenderer:
+  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -8812,10 +8962,13 @@ LineRenderer:
     numCapVertices: 4
     alignment: 0
     textureMode: 0
+    textureScale: {x: 1, y: 1}
     shadowBias: 0.5
     generateLightingData: 0
+  m_MaskInteraction: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+  m_ApplyActiveColorSpace: 0
 --- !u!114 &1929843122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9317,6 +9470,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22ed70de5a8f42243bdab8d1a8708bc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weapon: {fileID: 1986664236}
   bullet: {fileID: 541266956}
   spawnPoint: {fileID: 123392100}
   fireSpeed: 20
@@ -9547,7 +9701,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab68ce6587aab0146b8dabefbd806791, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
   m_ClickSpeed: 0.3
   m_MoveDeadzone: 0.6
   m_RepeatDelay: 0.5
