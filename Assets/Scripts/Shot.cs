@@ -1,6 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Shot : MonoBehaviour
 {
@@ -11,10 +10,10 @@ public class Shot : MonoBehaviour
     public float shotRate = 0.5f;
 
     private float shotRateTime = 0;
-    // Update is called once per frame
+
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Mouse.current.leftButton.wasPressedThisFrame)
         {
             if (Time.time > shotRateTime)
             {
@@ -25,10 +24,7 @@ public class Shot : MonoBehaviour
 
                 shotRateTime = Time.time + shotRate;
                 Destroy(newBullet, 2);
-
             }
         }
-            
-        
     }
 }
