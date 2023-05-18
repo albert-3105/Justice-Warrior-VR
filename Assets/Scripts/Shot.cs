@@ -1,30 +1,50 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class Shot : MonoBehaviour
 {
+    public GameObject weapon;
     public GameObject bullet;
     public Transform spawnPoint;
+    public float fireSpeed = 20;
+    public float cooldownTime = 0.5f; 
 
-    public float shotForce = 1500;
-    public float shotRate = 0.5f;
+    private bool canShoot = true; 
 
-    private float shotRateTime = 0;
+    void Start()
+    {
+        XRGrabInteractable grabbable = GetComponent<XRGrabInteractable>();
+        grabbable.activated.AddListener(FireBullet);
+    }
 
     void Update()
     {
-        if (Mouse.current.leftButton.wasPressedThisFrame)
+
+    }
+
+    public void FireBullet(ActivateEventArgs arg)
+    {
+        if (canShoot)
         {
-            if (Time.time > shotRateTime)
-            {
-                GameObject newBullet;
-                newBullet = Instantiate(bullet, spawnPoint.position, spawnPoint.rotation);
+            GameObject spawnedBullet = Instantiate(bullet, spawnPoint.position, spawnPoint.rotation);
 
-                newBullet.GetComponent<Rigidbody>().AddForce(spawnPoint.forward * shotForce);
+            Rigidbody bulletRigidbody = spawnedBullet.GetComponent<Rigidbody>();
+            bulletRigidbody.velocity = spawnPoint.forward * fireSpeed;
 
-                shotRateTime = Time.time + shotRate;
-                Destroy(newBullet, 2);
-            }
+            spawnedBullet.transform.Rotate(new Vector3(-90f, 0f, 0f));
+
+            Destroy(spawnedBullet, 5);
+
+            canShoot = false; 
+            StartCoroutine(StartCooldown());
         }
+    }
+
+    IEnumerator StartCooldown()
+    {
+        yield return new WaitForSeconds(cooldownTime);
+        canShoot = true; 
     }
 }
