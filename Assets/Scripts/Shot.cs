@@ -5,6 +5,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class Shot : MonoBehaviour
 {
+  
     public GameObject weapon;
     public GameObject bullet;
     public Transform spawnPoint;
