@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 824820279358099956}
   - component: {fileID: 824820279348722932}
   - component: {fileID: 824820280141662524}
+  - component: {fileID: -7418171925171179991}
   m_Layer: 0
   m_Name: '9m '
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -121,3 +122,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 2
+--- !u!136 &-7418171925171179991
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824820279356100404}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.005776454
+  m_Height: 0.04042459
+  m_Direction: 1
+  m_Center: {x: -0.000000005587935, y: 0.000000038184236, z: 0.000000003958122}

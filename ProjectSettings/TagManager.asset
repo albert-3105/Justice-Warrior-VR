@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Left Hand
   - Right Hand
+  - Drone
+  - Bullet
   layers:
   - Default
   - TransparentFX
