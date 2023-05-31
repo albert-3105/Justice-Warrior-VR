@@ -5,7 +5,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class Shot : MonoBehaviour
 {
-  
+    public GameController gameController;
     public GameObject weapon;
     public GameObject bullet;
     public Transform spawnPoint;
@@ -13,16 +13,16 @@ public class Shot : MonoBehaviour
     public float cooldownTime = 0.5f; 
 
     private bool canShoot = true; 
-
+    
     void Start()
     {
         XRGrabInteractable grabbable = GetComponent<XRGrabInteractable>();
         grabbable.activated.AddListener(FireBullet);
     }
 
-    void Update()
+    void OnCollisionEnter (Collision obj)
     {
-
+        gameController.TargetHit(obj.gameObject);
     }
 
     public void FireBullet(ActivateEventArgs arg)

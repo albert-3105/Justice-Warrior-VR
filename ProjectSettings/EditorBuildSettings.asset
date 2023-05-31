@@ -5,9 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/MainMenu.unity
+    guid: 1939a2d6446f4914ba3cae08277a2806
+  - enabled: 1
+    path: Assets/Scenes/Justice Warrior VR github.unity
+    guid: 698d736c8b4d8dd4bbbac9e00ec73ec4
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: d7e0582e776458843a9997ff6090bf0a,
       type: 2}
