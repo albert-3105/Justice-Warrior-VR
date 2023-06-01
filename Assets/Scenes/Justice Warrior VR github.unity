@@ -1814,7 +1814,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &341309917
+--- !u!114 &341309921
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1823,10 +1823,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 341309910}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e42ec6fcaf415040a61e79e57e7c158, type: 3}
+  m_Script: {fileID: 11500000, guid: 1ac6db7d88596ab4a998200eaa36858a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Bullet: {fileID: 824820279356100404, guid: f4acb31ab2bc6d2478c7239e32f8eed3, type: 3}
+  minX: -15.6
+  maxX: 15.6
+  droneObject: {fileID: 341309910}
 --- !u!1 &344266664
 GameObject:
   m_ObjectHideFlags: 0
@@ -2349,7 +2352,7 @@ MonoBehaviour:
   weapon: {fileID: 385628800}
   bullet: {fileID: 824820279356100404, guid: f4acb31ab2bc6d2478c7239e32f8eed3, type: 3}
   spawnPoint: {fileID: 529379247}
-  fireSpeed: 20
+  fireSpeed: 50
   cooldownTime: 0.5
 --- !u!1001 &387696635
 PrefabInstance:
@@ -5796,7 +5799,7 @@ MonoBehaviour:
   weapon: {fileID: 1156351921}
   bullet: {fileID: 824820279356100404, guid: f4acb31ab2bc6d2478c7239e32f8eed3, type: 3}
   spawnPoint: {fileID: 1030659309}
-  fireSpeed: 20
+  fireSpeed: 50
   cooldownTime: 0.5
 --- !u!1001 &1176409345
 PrefabInstance:
@@ -8127,19 +8130,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1967445879}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1369680892
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1369680891}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 821c48f0606d46441a98b65f18b3aed9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Bullet: {fileID: 824820279356100404, guid: f4acb31ab2bc6d2478c7239e32f8eed3, type: 3}
 --- !u!135 &1369680893
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -8169,6 +8159,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1369680898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369680891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ac6db7d88596ab4a998200eaa36858a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Bullet: {fileID: 824820279356100404, guid: f4acb31ab2bc6d2478c7239e32f8eed3, type: 3}
+  minX: -15.6
+  maxX: 15.6
+  droneObject: {fileID: 1369680891}
 --- !u!1001 &1386179670
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9376,7 +9382,7 @@ MonoBehaviour:
   weapon: {fileID: 1514332795}
   bullet: {fileID: 824820279356100404, guid: f4acb31ab2bc6d2478c7239e32f8eed3, type: 3}
   spawnPoint: {fileID: 792263973}
-  fireSpeed: 20
+  fireSpeed: 50
   cooldownTime: 0.5
 --- !u!1001 &1515497715
 PrefabInstance:
@@ -9535,6 +9541,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bullet: {fileID: 824820279356100404, guid: f4acb31ab2bc6d2478c7239e32f8eed3, type: 3}
+  minX: -15.6
+  maxX: 15.6
+  droneObject: {fileID: 1556373099}
 --- !u!135 &1556373101
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -10034,7 +10043,7 @@ MonoBehaviour:
   weapon: {fileID: 1654205303}
   bullet: {fileID: 824820279356100404, guid: f4acb31ab2bc6d2478c7239e32f8eed3, type: 3}
   spawnPoint: {fileID: 853248826}
-  fireSpeed: 20
+  fireSpeed: 50
   cooldownTime: 0.5
 --- !u!1001 &1669650598
 PrefabInstance:
@@ -10646,6 +10655,50 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddae8703de8a63742af7ff389827b4eb, type: 3}
+--- !u!1 &1705211580
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1705211582}
+  - component: {fileID: 1705211581}
+  m_Layer: 0
+  m_Name: ScoreManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1705211581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705211580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c3ef6ac49e6ae94e9d1c2dd27449725, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1705211582
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705211580}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.163715, y: 3.6360123, z: 17.157932}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1725467076
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11055,7 +11108,7 @@ MonoBehaviour:
   weapon: {fileID: 1774692870}
   bullet: {fileID: 824820279356100404, guid: f4acb31ab2bc6d2478c7239e32f8eed3, type: 3}
   spawnPoint: {fileID: 401504251}
-  fireSpeed: 20
+  fireSpeed: 50
   cooldownTime: 0.5
 --- !u!1001 &1774757770
 PrefabInstance:
@@ -13097,9 +13150,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameController: {fileID: 1795386976}
   weapon: {fileID: 1986664236}
-  bullet: {fileID: 0}
+  bullet: {fileID: 824820279356100404, guid: f4acb31ab2bc6d2478c7239e32f8eed3, type: 3}
   spawnPoint: {fileID: 123392100}
-  fireSpeed: 20
+  fireSpeed: 50
   cooldownTime: 0.5
 --- !u!65 &1986664242
 BoxCollider:

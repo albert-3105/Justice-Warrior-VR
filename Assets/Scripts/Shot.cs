@@ -10,7 +10,7 @@ public class Shot : MonoBehaviour
     public GameObject bullet;
     public Transform spawnPoint;
     public float fireSpeed = 20;
-    public float cooldownTime = 0.5f; 
+    public float cooldownTime = 0.25f; 
 
     private bool canShoot = true; 
     

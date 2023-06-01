@@ -4,17 +4,19 @@ using UnityEngine;
 
 public class DroneMoviment : MonoBehaviour
 {
-
     private Rigidbody droneRigidbody;
-    private float speed = 23f;
+    private float speed = 20f;
     public GameObject Bullet;
 
     // Coordenadas límite
-    private float minX = -15.6f;
-    private float maxX = 15.6f;
+    public float minX = -15.6f;
+    public float maxX = 15.6f;
 
     // Dirección actual del movimiento
     private int movementDirection = 1; // 1 para moverse hacia la derecha, -1 para moverse hacia la izquierda
+
+    // Referencia al GameObject del dron
+    public GameObject droneObject;
 
     // Start is called before the first frame update
     void Start()
@@ -54,8 +56,16 @@ public class DroneMoviment : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Bullet"))
         {
-            // Colisión con una bala, destruir el dron
-            Destroy(gameObject);
+            // Verificar si el objeto tiene el tag "Dron"
+            if (droneObject.CompareTag("Drone"))
+            {
+                // Colisión con una bala y el objeto tiene el tag "Dron"
+                // Destruir el dron
+                Destroy(droneObject);
+
+                // Aumentar la puntuación
+                ScoreManager.Instance.IncreaseScore();
+            }
         }
     }
 }

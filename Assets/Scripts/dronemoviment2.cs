@@ -6,7 +6,7 @@ public class dronemoviment2 : MonoBehaviour
 {
 
     private Rigidbody droneRigidbody;
-    private float speed = 23f;
+    private float speed = 20f;
     public GameObject Bullet;
 
     // Coordenadas límite
@@ -54,8 +54,15 @@ public class dronemoviment2 : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Bullet"))
         {
-            // Colisión con una bala, destruir el dron
-            Destroy(gameObject);
+            // Verificar si el objeto tiene el tag "Dron"
+            if (gameObject.CompareTag("Drone"))
+            {
+                // Colisión con una bala y el objeto tiene el tag "Dron"
+                // Destruir el dron
+                Destroy(gameObject);
+
+                
+            }
         }
     }
 }
